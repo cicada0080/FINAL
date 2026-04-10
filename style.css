@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+.history{
+  display: flex;
+  align-items: center;
+}
+
+.header{
+  padding: 30px 30px 60px 30px;
+  
+}
+.header__container{
+  max-width: 1800px;
+  margin-inline:auto;
+}
+.navigation{
+  display: flex;
+  justify-content: center;
+}
+.header__list{
+  display: flex;
+  list-style: none;
+  gap: 49px;
+  align-items: center;
+  font-size: 30px;
+}
+ 
+body{
+  background-color: rgb(161,223,226);
+  font-family: Arial ;
+   
+}
+a{
+font-weight: 600;
+text-decoration: none;}
+
+.header__list-items{
+  padding: 10px;
+  border-bottom: darkblue solid;
+  padding-bottom: 10px;
+
+}
+
+h1{
+ 
+  padding-bottom: 30px;
+  justify-content: center;
+
+}
+
+.kartinka{
+  padding-top: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+img{
+  width: 600px;
+  border-radius: 5%;
+  border-bottom: 10px;
+  border-bottom:dark solid;
+   
+}
+ 
+.knopka{
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+   
+}
+.container {
+    display: flex;
+    gap: 20px; /* отступ между текстом и картинкой */
+    padding: 20px;
+}
+
+.text {
+    flex: 1; /* текст занимает всё доступное место */
+}
+
+ img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+ .divcss{
+  width: 800px;
+ }
+ .textandkartinka{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10%;
+ 
+ }
+ h2{
+  padding-top: 20px;
+ }
+ .cssprimer{
+  width: 300px;
+ }
+ 
+ 
+ 
+
+ 
