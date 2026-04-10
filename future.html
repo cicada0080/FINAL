@@ -76,12 +76,102 @@
              }
          }
          /* Адаптивность для телефонов (1 картинка) */
-         @media (max-width: 600px) {
-             .gallery-item {
-                 flex-basis: 100%;
-             }
-         }
+        /* контейнер */
+.containere {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+/* текст */
+.block-text{
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* карточки */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex: 1 1 300px; /* ключ к адаптиву */
+  max-width: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+/* GIF */
+.gif-block img {
+  width: 100%;
+  max-width: 900px; /* вместо фиксированного */
+  height: auto;
+}
+
+/* таблица — ВАЖНО */
+.table-wrapper{
+  overflow-x: auto;
+}
+
+table {
+  min-width: 600px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* ===== АДАПТИВ ===== */
+
+/* планшет */
+@media (max-width: 768px){
+  h1{
+    font-size: 24px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  .content-block{
+    padding: 20px;
+  }
+}
+
+/* телефон */
+@media (max-width: 480px){
+  body{
+    padding: 10px;
+  }
+
+  .gallery{
+    gap: 10px;
+  }
+
+  .gallery-item{
+    flex: 1 1 100%;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+}
          /* Блок с GIF-анимацией */
          .gif-block {
              text-align: center;
@@ -138,20 +228,22 @@
 
         <!-- Блок 1 -->
         <div class="content-block">
-          <h2>Готовые конструкторы</h2>
-          <div class="gallery"><div class="textandkartinka"> 
-      <h2>Онлайн-платформы, которые позволяют создавать сайты без навыков программирования.</h2>
- 
- 
-            
-              <div class="gallery-item"><img src="tildakar.png" alt="Tilda"></div>
-              <div class="gallery-item"><img src="squarespacekart.jpg" alt="Squarespace"></div>
-              <div class="gallery-item"><img src="wixkra.jpg" alt="Wix"></div>
-          </div> </div>
-          <div class="gif-block">
-              <img src="tilda.gif" alt="Tilda Animation">
-          </div>
-        </div>
+  <h2>Готовые конструкторы</h2>
+
+  <p class="block-text">
+    Онлайн-платформы, которые позволяют создавать сайты без навыков программирования.
+  </p>
+
+  <div class="gallery">
+    <div class="gallery-item"><img src="tildakar.png" alt="Tilda"></div>
+    <div class="gallery-item"><img src="squarespacekart.jpg" alt="Squarespace"></div>
+    <div class="gallery-item"><img src="wixkra.jpg" alt="Wix"></div>
+  </div>
+
+  <div class="gif-block">
+    <img src="tilda.gif" alt="Tilda Animation">
+  </div>
+</div>
 
         <!-- Блок 2 -->
         <div class="content-block">
@@ -173,7 +265,11 @@
         </div>
 
         <!-- Таблица -->
-        <table border="1">
+        <div class="table-wrapper">
+  <table>
+ 
+ 
+</div><table border="1">
           <thead>
               <tr>
                   <th>Критерий</th>
@@ -192,7 +288,7 @@
               
           </tbody>
       </table>
-
+</div>
     </div> <!-- Конец .container -->
 </body>
 </html>
