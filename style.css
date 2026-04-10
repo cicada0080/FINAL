@@ -157,7 +157,6 @@ img{
   flex-wrap: wrap; /* важно */
 
 }
-
   .knopka{
     padding-top: 20px;
   }
@@ -168,5 +167,10 @@ img{
   padding: 20px;
   border-radius: 20px;
   flex-wrap: wrap;
+}
+body{
+  background-position-x: -130px;
+  background-position-y:75px;
+  background-size: 1500px;
 }
 }
