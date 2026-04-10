@@ -17,7 +17,7 @@ body{
 }
 
 .header__container{
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -107,7 +107,7 @@ img{
   justify-content: center;
   padding: 20px;
   border-radius: 20px;
-  flex-wrap: wrap;
+  flex-wrap: auto;
 }
 
 .cssprimer{
@@ -139,7 +139,7 @@ img{
 }
 
 /* телефоны */
-@media (max-width: 480px){
+@media (max-width: 500px){
   h1{
     font-size: 22px;
   }
@@ -161,4 +161,12 @@ img{
   .knopka{
     padding-top: 20px;
   }
+  .textandkartinka{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
 }
