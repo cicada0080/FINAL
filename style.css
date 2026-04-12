@@ -1,176 +1,139 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: black;
 }
- 
 
-body{
+body {
   background-color: rgb(161,223,226);
   font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* ===== CONTAINER ===== */
+.header__container,
+.containere,
+.content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* ===== HEADER ===== */
-.header{
-  padding: 20px;
+.header {
+  padding: 20px 0;
+}
+.bigtext{
+font-size: 100px;
 }
 
-.header__container{
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
-.navigation{
+.navigation {
   display: flex;
   justify-content: center;
 }
 
-.header__list{
+.header__list {
   display: flex;
   list-style: none;
-  gap: 30px;
-  align-items: center;
-  font-size: clamp(16px, 2vw, 28px);
-  flex-wrap: wrap; /* перенос на маленьких экранах */
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: center;
+  font-size: clamp(14px, 2vw, 22px);
 }
 
-.header__list-items{
-  padding: 10px;
+.header__list-items {
+  padding: 8px 12px;
   border-bottom: 2px solid darkblue;
 }
 
-/* ===== TEXT ===== */
-h1{
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-h2{
-  padding-top: 20px;
-}
-
-/* ===== LINKS ===== */
-a{
-  font-weight: 600;
+a {
   text-decoration: none;
+  font-weight: 600;
+  color: black;
 }
 
-/* ===== IMAGE BLOCK ===== */
-.kartinka{
-  padding: 20px;
+/* ===== TEXT ===== */
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: clamp(22px, 4vw, 48px);
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: clamp(16px, 2vw, 22px);
+}
+
+/* ===== BLOCKS ===== */
+.textandkartinka {
+  background: white;
   display: flex;
   gap: 20px;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: auto; /* важно */
-
+  padding: 20px;
+  border-radius: 15px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-img{
+/* ===== IMAGES ===== */
+img {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
   border-radius: 10px;
-  border-bottom: 4px solid #000;
 }
 
-/* ===== BUTTON ===== */
-.knopka{
-  display: flex;
-  justify-content: center;
-  padding-top: 30px;
-}
-
-/* ===== CONTENT ===== */
-.container {
+/* галерея */
+.kartinka {
   display: flex;
   gap: 20px;
-  padding: 20px;
-  flex-wrap: wrap; /* адаптив */
-}
-
-.text {
-  flex: 1 1 300px; /* минимальная ширина */
-}
-
-.divcss{
-  width: 100%;
-  max-width: 800px;
-}
-
-/* ===== BLOCK ===== */
-.textandkartinka{
-  background-color: white;
-  display: flex;
   justify-content: center;
-  padding: 20px;
-  border-radius: 20px;
-  flex-wrap: auto;
+  flex-wrap: wrap;
+  padding: 20px 0;
 }
 
-.cssprimer{
-  width: 100%;
+/* ===== SPECIAL ===== */
+.cssprimer {
   max-width: 300px;
 }
 
-/* ===== MEDIA ===== */
-
-/* планшеты */
-@media (max-width: 768px){
-  .header{
-    padding: 15px;
-  }
-
-  .header__list{
-    gap: 15px;
-  }
-
-  .container{
-    flex-direction: column;
-  }
-
-  .textandkartinka{
-    flex-direction: column;
-    align-items: center;
-  }
-  
+.imagenone {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
 }
 
-/* телефоны */
-@media (max-width: 500px){
-  h1{
+/* ===== TABLE ===== */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ===== ADAPTIVE ===== */
+@media (max-width: 768px) {
+  .textandkartinka {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
     font-size: 22px;
   }
 
-  .header__list{
-    font-size: 16px;
+  .imagenone {
+    display: none;
   }
-
-  .kartinka{
-  padding: 20px;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap; /* важно */
-
-}
-  .knopka{
-    padding-top: 20px;
-  }
-  .textandkartinka{
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  border-radius: 20px;
-  flex-wrap: wrap;
-}
-body{
-  background-position-x: -130px;
-  background-position-y:75px;
-  background-size: 1300px;
-}
 }
