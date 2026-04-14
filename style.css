@@ -58,7 +58,7 @@ h1 {
   padding: 20px 0;
   font-size: clamp(22px, 4vw, 48px);
 }
-
+ 
 h2 {
   margin-bottom: 15px;
   font-size: clamp(16px, 2vw, 22px);
@@ -89,7 +89,7 @@ img {
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 50px ;
 }
 
 /* ===== SPECIAL ===== */
